@@ -27,7 +27,7 @@ def redact_pdf(path, output_path, config):
                 redaction[2] * page.rect.width,
                 redaction[3] * page.rect.height
             )
-            page.add_redact_annot(rect, fill=(1, 1, 1))
+            page.add_redact_annot(rect, fill=config["fill"])
         page.apply_redactions()
 
 
