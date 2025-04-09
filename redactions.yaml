@@ -1,8 +1,29 @@
-0: # all pages
+# Redaction fill color
+fill: [1, 1, 1] # white
+# Color in RGB format (0-1)
+# Examples:
+# [0, 0, 0] # black
+# [1, 0, 0] # red
+# [0, 1, 0] # green
+# [0, 0, 1] # blue
+# [1, 1, 1]  # white
+
+
+# Redaction coordinates
+# Coordinates are in the format [x1, y1, x2, y2] where:
+# x1, y1 are the top left corner of the rectangle
+# x2, y2 are the bottom right corner of the rectangle
+# x1, y1, x2, y2 are in the range [0, 1] where 0 is the left/top and 1 is the right/bottom of the page
+
+# To redact specific pages, use the page number as the key (page number starts from 1)
+# Key 0 is used for all pages
+
+0: # All pages
   - [0,0, 1, 0.05]
   - [0, 0.95, 1, 1]
 
-1: # first page
+1: # First page
   - [0.7, 0, 1, 0.1]
   - [0, 0.1, 0.3, 0.18]
   - [0, 0.95, 1, 1]
+
